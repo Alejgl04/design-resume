@@ -101,7 +101,6 @@ body {
   z-index: -1;
   width: 100%;
   height: 100%;
-  /* background-image: repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%); */
   background-image: repeating-radial-gradient(#fff, #fff 1px, transparent 0px, transparent 100%);
   background-size: 0.6rem 0.6rem;
   opacity: 0.5;
@@ -109,13 +108,79 @@ body {
 }
 
 .user-info__name {
-
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: var(--main-color);
 }
 
 .user-info__job {
-  
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: var(--main-color);
 }
 
+.user-info__links {
+  margin-bottom: 3.6rem;
+}
+
+.links__social {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.social__option {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  opacity: 0.9;
+  border-radius: 3rem;
+  transition: all 300ms ease-in-out;
+}
+
+.social__option:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.user-info__buttons {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.user-info__btn {
+  padding: 2rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+
+  border: 2px solid var(--main-color);
+  border-radius: 3.2rem;
+  color: var(--main-color);
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+  transition: all 300ms ease-in-out;
+}
+
+.user-info__btn:hover {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+.user-info__footer {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* LAYOUT CONTENT */
 .layout__content {
   grid-area: content;
+}
+
+
+
+
+.layout__menu {
+  display: none!important;
 }
