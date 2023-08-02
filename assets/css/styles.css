@@ -183,9 +183,9 @@ body {
 }
 
 .content__page {
-  background-color: var(--main-color);
   min-height: 100%;
   border-radius: 3.2rem;
+  background-color: var(--main-color);
 
   display: flex;
   flex-direction: column;
@@ -264,4 +264,16 @@ body {
   opacity: 1;
   right: 100%;
 
+}
+
+
+/* ABOUT ME */
+
+.content__about {
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  padding: 6rem;
+  padding-right: 3rem;
+  overflow: auto;
 }
