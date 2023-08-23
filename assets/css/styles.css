@@ -749,7 +749,71 @@ body {
   opacity: 1;
 }
 
-
 .resume__right {
   flex-basis: 41%;
+  padding: 0 1.5rem;
+}
+
+.resume__skills {
+  width: 100%;
+  margin-bottom: 3rem;
+
+}
+
+.skills__title {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.skills__text {
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.4rem;
+
+}
+
+.skills__number {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.4rem;
+  color: var(--subtitle-color);
+}
+
+.skills__percentage {
+  height: 0.8rem;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.skills__progressbar {
+  height: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 1rem;
+  background-color: var(--main-color);
+  margin-bottom: 1.5rem;
+}
+
+.skills__percentage--p1 { width: 90%;}
+.skills__percentage--p2 { width: 60%;}
+.skills__percentage--p3 { width: 90%;}
+.skills__percentage--p4 { width: 85%;}
+.skills__percentage--p5 { width: 70%;}
+.skills__percentage--p6 { width: 70%;}
+
+.knowledges__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.knowledges__option {
+  background-color: var(--secondary-color);
+  border-radius: 0.3rem;
+  color: var(--main-color);
+  font-size: 1.3rem;
+  padding: 0.2rem 1rem;
+  margin: 0.3rem;
 }
