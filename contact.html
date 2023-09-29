@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/scroll.css">
-    <link rel="stylesheet" href="assets//fonts/Poppins/poppins.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/fonts/Poppins/poppins.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free/css/all.min.css">
-
+    <script src="assets/js/map.js" defer></script>
   </head>
   <body>
     <!-- Main Layout -->
@@ -63,7 +64,7 @@
               </li>
 
               <li class="menu__option">
-                  <a href="blog.html" class="menu__link menu__link--active">
+                  <a href="blog.html" class="menu__link">
                     <i class="menu__icon fa-solid fa-book"></i>
                     <span class="menu__overlay">Blog</span>
                   </a>
@@ -155,41 +156,41 @@
             </section>
 
             <section class="contact__form-box">
-              <div class="contact__map">
-                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.574534380925!2d-82.53719932499095!3d27.945685714939994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c2f1f9bae877%3A0x39ac31cb4d66fb0f!2s5401%20W%20Kennedy%20Blvd%2C%20Tampa%2C%20FL%2033609!5e0!3m2!1ses-419!2sus!4v1695641626595!5m2!1ses-419!2sus"></iframe>
+              <div class="contact__map" id="loadIframeMap">
+                <span class="loader"></span>
               </div>
 
               <header class="contact__form-header">
-                <h3 class="contact__subtitle">How may I <span class="subtitle__color">help you?</span></h3>
+                <h3 class="form-header__title">How may I <span class="title__color">help you?</span></h3>
               </header>
 
-              <form class="contact__form">
+              <form class="contact__form" autocomplete="off">
                 <div class="form__container">
                   
                   <section class="form__left">
                     <div class="form__group">
-                      <input type="text" class="form__input" name="name" required placeholder="Enter your name here.." />
+                      <input type="text" class="form__input" name="name" required placeholder="Name" />
                       <label for="name" class="form__label">Name</label>
                     </div>
                     <div class="form__group">
-                      <input type="email" class="form__input" name="email" required placeholder="Enter your email here.." />
+                      <input type="email" class="form__input" name="email" required placeholder="Email" />
                       <label for="email" class="form__label">Email</label>
                     </div>
                     <div class="form__group">
-                      <input type="subject" class="form__input" name="subject" required placeholder="Enter your subject here.." />
+                      <input type="subject" class="form__input" name="subject" required placeholder="Subject" />
                       <label for="subject" class="form__label">Subject</label>
                     </div>
                   </section>
 
                   <section class="form__right">
-                    <div class="form__group">
-                      <textarea name="message" class="form__input form__input--textarea" cols="20" rows="10" placeholder="Message.."></textarea>
-                      <label for="message" class="form__label">Subject</label>
+                    <div class="form__group form__group--textarea">
+                      <textarea name="message" class="form__input form__input--textarea" placeholder="Message"></textarea>
+                      <label for="message" class="form__label">Message</label>
                     </div>
                   </section>
-
-                  <input type="submit" class="form__button" value="Submit" />
                 </div>
+
+                <input type="submit" class="form__button" value="Submit" />
               </form>
             </section>
           </div>

@@ -13,6 +13,7 @@
   --company-color: #A5A6A7;
 
   --color--background--certificate: #F5F5F5;
+  --color-background-contact: #FCFCFC;
 }
 
 /* GENERAL STYLES */
@@ -278,7 +279,7 @@ body {
 .content__resume,
 .content__portfolio,
 .content__blog,
-.content__contact {
+.content__contact{
   display: block;
   height: 100%;
   min-height: 100%;
@@ -300,16 +301,17 @@ body {
 .resume__title,
 .portfolio__title,
 .blog__title
-.contact__title {
+.contact__title{
   font-size: 3.2rem;
   position: relative;
+  
 }
 
 .about__title::after,
 .resume__title::after,
 .portfolio__title::after,
 .blog__title::after,
-.contact__title::after {
+.contact__title::after{
   content: "";
   position: absolute;
   top: 20px;
@@ -1064,4 +1066,161 @@ body {
 .article__title {
   font-size: 1.8rem;
   margin-top: 0.5rem;
+}
+
+/*********************CONTACT FORM************************/
+
+
+.form-header__title {
+  font-size: 2rem;
+}
+.contact__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__info {
+  flex-basis: 32%;
+  padding: 0 1.5rem;
+  margin-right: 1rem;
+}
+
+.contact__data {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--color-background-contact);
+  border: 1px solid var(--border-reviews-color);
+}
+.content__contact {
+  margin-bottom: 4rem;
+}
+
+.contact__form-box {
+  flex-basis: 66%;
+  padding: 0 1.5rem;
+}
+
+.contact__icon {
+  font-size: 3.2rem;
+  color: var(--secondary-color);
+}
+
+.contact__subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact__form-header {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__left {
+  flex-basis: 47%;
+  margin-right: 5rem;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.form__input {
+  position: relative;
+  width: 100%;
+  height: 4.2;
+  display: block;
+  border: 0.2rem solid var(--border-reviews-color);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+  outline: none;
+  box-shadow: 0 1rem 1rem -8px rgba(0,0,0,0.10);
+  background: 0;
+  background-color: transparent;
+  z-index: 1;
+
+}
+
+.form__input:focus {
+  border: 0.2rem solid var(--secondary-color);
+}
+
+.form__label {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  z-index: 1;
+  color: var(--company-color);
+  transition: all 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label {
+  top: -2rem;
+  left: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.form__input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__input::-moz-placeholder {
+  color: transparent;
+}
+
+.form__right {
+  flex-basis: 50%;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.form__input--textarea {
+  display: block;
+  resize: none;
+  height: 100%;
+}
+
+.form__group--textarea {
+  height: 100%;
+}
+
+.form__button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid var(--secondary-color);
+  color: var(--title-color);
+  background-color: var(--main-color);
+  border-radius: 3rem;
+  box-shadow: 0 1rem 1rem -8px rgba(0, 0,0,0.22);
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+.form__button:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.contact__map {
+  width: 100%;
+  min-height:15rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.contact__iframe {
+  width: 100%;
+  height: 14rem;
 }
